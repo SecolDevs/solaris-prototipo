@@ -1,0 +1,7 @@
+export const GET_DESTINOS = 'GET_DESTINOS'
+export const GET_PAQUETES = 'GET_PAQUETES'
+export const GET_PAQUETE = 'GET_PAQUETE'
+export const GET_HOTELES = 'GET_HOTELES'
+
+export const HANDLE_CLEAN = 'HANDLE_CLEAN'
+export const HANDLE_COMPONENT = 'HANDLE_COMPONENT'

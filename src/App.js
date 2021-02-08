@@ -1,26 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import ComponenteState from './context/componente/ComponenteState'
+import DestinoState from './context/destino/DestinoState'
+import HotelState from './context/hotel/HotelState'
+import PaqueteState from './context/paquete/PaqueteState'
+import Routes from './routes/Routes'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <DestinoState>
+      <PaqueteState>
+        <ComponenteState>
+          <HotelState>
+            <Routes />
+          </HotelState>
+        </ComponenteState>
+      </PaqueteState>
+    </DestinoState>
+  )
 }
 
-export default App;
+export default App
